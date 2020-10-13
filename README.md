@@ -12,25 +12,25 @@
 
 ### [複数単語コンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E5%8D%98%E8%AA%9E%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BF%85%E9%A0%88)
 
-### プライベートなプロパティ名
+### [プライベートなプロパティ名](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%81%AA%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E5%90%8D-%E5%BF%85%E9%A0%88)
 
-### 単一ファイルコンポーネントのファイル名の形式
+### [単一ファイルコンポーネントのファイル名の形式](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E4%B8%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### 基底コンポーネントの名前
+### [基底コンポーネントの名前](https://jp.vuejs.org/v2/style-guide/index.html#%E5%9F%BA%E5%BA%95%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### 単一インスタンスのコンポーネント名
+### [単一インスタンスのコンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E4%B8%80%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### 密結合コンポーネントの名前
+### [密結合コンポーネントの名前](https://jp.vuejs.org/v2/style-guide/index.html#%E5%AF%86%E7%B5%90%E5%90%88%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### コンポーネント名における単語の順番
+### [コンポーネント名における単語の順番](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%8D%98%E8%AA%9E%E3%81%AE%E9%A0%86%E7%95%AA-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### テンプレート内でのコンポーネント名の形式
+### テンプレート内でのコンポーネント名の形式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-### JS/JSX内でのコンポーネント名の形式
+### [JS/JSX内でのコンポーネント名の形式](https://jp.vuejs.org/v2/style-guide/index.html#JS-JSX-%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 // JSX使わないからいらないと思う
 
-### 完全な単語によるコンポーネント名
+### [完全な単語によるコンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E5%AE%8C%E5%85%A8%E3%81%AA%E5%8D%98%E8%AA%9E%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ## クラス
 
@@ -52,21 +52,19 @@
 
 ## コンポーネント
 
-### コンポーネントのデータ
+### [コンポーネントのデータ](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF-%E5%BF%85%E9%A0%88)
 
-### プロパティの定義
+### [プロパティの定義](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%81%AE%E5%AE%9A%E7%BE%A9-%E5%BF%85%E9%A0%88)
 
-### キー付きv-for
+### [キー付きv-for](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%AD%E3%83%BC%E4%BB%98%E3%81%8D-v-for-%E5%BF%85%E9%A0%88)
 
-### v-forと一緒にv-ifを使うのを避ける
+### [v-forと一緒にv-ifを使うのを避ける](https://jp.vuejs.org/v2/style-guide/index.html#v-for-%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB-v-if-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%92%E9%81%BF%E3%81%91%E3%82%8B-%E5%BF%85%E9%A0%88)
 
-### コンポーネントスタイルのスコープ
+### [コンポーネントスタイルのスコープ](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97-%E5%BF%85%E9%A0%88)
 
-### コンポーネントのファイル
+### [コンポーネントのファイル](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
-ファイルを結合してくれるビルドシステムがあるときは必ず、各コンポーネントはそれぞれ別のファイルに書くべきです。
-
-### 自己終了形式のコンポーネント
+### [自己終了形式のコンポーネント](https://jp.vuejs.org/v2/style-guide/index.html#%E8%87%AA%E5%B7%B1%E7%B5%82%E4%BA%86%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ## クラス
 
