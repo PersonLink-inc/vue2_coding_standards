@@ -246,6 +246,22 @@ type Foo = {
 
 ## [名前空間](https://typescript-jp.gitbook.io/deep-dive/styleguide#ming-qian-kong-jian)
 
+名前にPascalCaseを使用する
+> 理由：TypeScriptチームに続くコンベンション。名前空間は事実上静的メンバを持つクラスです。クラス名はPascalCase=>名前空間名はPascalCaseです
+
+悪い
+```
+namespace foo {
+}
+```
+
+良い
+```
+namespace Foo {
+}
+```
+
+
 ## [Enum](https://typescript-jp.gitbook.io/deep-dive/styleguide#ming-qian-kong-jian)
 
 // Enum使用推奨する？
