@@ -171,6 +171,18 @@ props: {
 
 ## [クラス](https://typescript-jp.gitbook.io/deep-dive/styleguide#kurasu)
 
+クラス名には PascalCaseを使います。
+> 理由：これは実際には標準のJavaScriptではかなり一般的です。
+
+悪い
+```
+class foo { }
+```
+良い
+```
+class Foo { }
+```
+
 ## [メソッド](https://typescript-jp.gitbook.io/deep-dive/styleguide#to)
 
 ## [インターフェース](https://typescript-jp.gitbook.io/deep-dive/styleguide#intfsu)
