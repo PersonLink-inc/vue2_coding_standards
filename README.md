@@ -57,9 +57,24 @@ export default {
 }
 ```
 
-### [プライベートなプロパティ名](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%81%AA%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E5%90%8D-%E5%BF%85%E9%A0%88)
-
 ### [基底コンポーネントの名前](https://jp.vuejs.org/v2/style-guide/index.html#%E5%9F%BA%E5%BA%95%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
+
+アプリケーション特有のスタイルやルールを適用する基底コンポーネント (またはプレゼンテーションコンポーネント: Presentation Components、ダムコンポーネント: Dumb Components、純粋コンポーネント: Pure Components とも) は、すべて Base 、 App 、V などの固有のプレフィックスで始まるべきです。
+
+悪い例
+```
+components/
+|- MyButton.vue
+|- VueTable.vue
+|- Icon.vue
+```
+良い例
+```
+components/
+|- BaseButton.vue
+|- BaseTable.vue
+|- BaseIcon.vue
+```
 
 ### [単一インスタンスのコンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E4%B8%80%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
