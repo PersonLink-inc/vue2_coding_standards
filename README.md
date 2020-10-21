@@ -185,7 +185,7 @@ class Foo { }
 
 ## [メソッド](https://typescript-jp.gitbook.io/deep-dive/styleguide#to)
 
-メソッドにはcamelCaseを使う
+メソッド名にはcamelCaseを使う
 
 悪い
 ```
@@ -198,6 +198,20 @@ class Foo {
 ```
 class Foo {
     bazHoge() { }
+}
+```
+
+メソッドの引数はcamelCaseを使う。型をつけましょう。
+
+悪い
+```
+hoge(File) {
+}
+```
+
+良い
+```
+hoge(file: File) {
 }
 ```
 
@@ -260,13 +274,6 @@ namespace foo {
 namespace Foo {
 }
 ```
-
-
-## [Enum](https://typescript-jp.gitbook.io/deep-dive/styleguide#ming-qian-kong-jian)
-
-// Enum使用推奨する？
-
-## 引数
 
 ## 変数
 
