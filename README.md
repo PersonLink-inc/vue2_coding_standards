@@ -102,9 +102,32 @@ components/
 |- SearchSidebarNavigation.vue
 ```
 
-### [コンポーネント名における単語の順番](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%8D%98%E8%AA%9E%E3%81%AE%E9%A0%86%E7%95%AA-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
-
 ### [テンプレート内でのコンポーネント名の形式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
+
+ほとんどのプロジェクトでは、コンポーネント名は 単一ファイルコンポーネント と文字列テンプレートの中では常にパスカルケース(PascalCase)になるべきです。
+しかし、 DOM テンプレートの中ではケバブケース(kebab-case)です。
+
+悪い例
+```
+<!-- 単一ファイルコンポーネント、文字列テンプレートの中 -->
+<mycomponent/>
+<!-- 単一ファイルコンポーネント、文字列テンプレートの中 -->
+<myComponent/>
+<!-- DOM テンプレートの中 -->
+<MyComponent></MyComponent>
+```
+
+良い例
+```
+<!-- 単一ファイルコンポーネント、文字列テンプレートの中 -->
+<MyComponent/>
+<!-- DOM テンプレートの中 -->
+<my-component></my-component>
+または
+
+<!-- どこでも -->
+<my-component></my-component>
+```
 
 ### [JS/JSX内でのコンポーネント名の形式](https://jp.vuejs.org/v2/style-guide/index.html#JS-JSX-%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
