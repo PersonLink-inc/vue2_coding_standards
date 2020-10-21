@@ -151,6 +151,24 @@ components/
 
 ### [プロパティ名の型式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E5%90%8D%E3%81%AE%E5%9E%8B%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+プロパティ名は、定義の時は常にキャメルケース(camelCase)にするべきですが、テンプレートではケバブケース(kebab-case)にするべきです。
+
+悪い例
+```
+props: {
+  'greeting-text': String
+}
+<WelcomeMessage greetingText="hi"/>
+```
+
+良い例
+```
+props: {
+  greetingText: String
+}
+<WelcomeMessage greeting-text="hi"/>
+```
+
 ## [クラス](https://typescript-jp.gitbook.io/deep-dive/styleguide#kurasu)
 
 ## [メソッド](https://typescript-jp.gitbook.io/deep-dive/styleguide#to)
