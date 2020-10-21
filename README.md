@@ -129,11 +129,25 @@ components/
 <my-component></my-component>
 ```
 
-### [JS/JSX内でのコンポーネント名の形式](https://jp.vuejs.org/v2/style-guide/index.html#JS-JSX-%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
-
-// JSX使わないからいらないと思う
-
 ### [完全な単語によるコンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E5%AE%8C%E5%85%A8%E3%81%AA%E5%8D%98%E8%AA%9E%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
+
+コンポーネント名には、略語よりも完全な単語を使うべきです。
+
+> 長い名前によってもたらされる明快さは非常に貴重ですが、それをタイプする労力はエディタの自動補完によってとても小さくなります。特に、一般的でない略語は常に避けるべきです。
+
+悪い例
+```
+components/
+|- SdSettings.vue
+|- UProfOpts.vue
+```
+
+良い例
+```
+components/
+|- StudentDashboardSettings.vue
+|- UserProfileOptions.vue
+```
 
 ### [プロパティ名の型式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E5%90%8D%E3%81%AE%E5%9E%8B%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
