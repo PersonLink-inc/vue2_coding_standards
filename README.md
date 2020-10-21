@@ -17,6 +17,22 @@ camelCaseを使ってファイルに名前を付けます。例えばaccordion.t
 
 ### [単一ファイルコンポーネントのファイル名の形式](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E4%B8%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+全てパスカルケースにしましょう
+
+悪い例
+```
+components/
+|- mycomponent.vue
+components/
+|- myComponent.vue
+```
+
+良い例
+```
+components/
+|- MyComponent.vue
+```
+
 ## コンポーネント
 
 ### [複数単語コンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E5%8D%98%E8%AA%9E%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BF%85%E9%A0%88)
