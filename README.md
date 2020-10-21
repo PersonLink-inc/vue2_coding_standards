@@ -185,6 +185,22 @@ class Foo { }
 
 ## [メソッド](https://typescript-jp.gitbook.io/deep-dive/styleguide#to)
 
+メソッドにはcamelCaseを使う
+
+悪い
+```
+class Foo {
+    BazHoge() { }
+}
+```
+
+良い
+```
+class Foo {
+    bazHoge() { }
+}
+```
+
 ## [インターフェース](https://typescript-jp.gitbook.io/deep-dive/styleguide#intfsu)
 
 ## [型](https://typescript-jp.gitbook.io/deep-dive/styleguide#taipu)
