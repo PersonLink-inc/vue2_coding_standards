@@ -37,6 +37,26 @@ components/
 
 ### [複数単語コンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E5%8D%98%E8%AA%9E%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BF%85%E9%A0%88)
 
+ルートの App コンポーネントや、Vue が提供する <transition> や <component> のようなビルトインコンポーネントを除き、コンポーネント名は常に複数単語とするべきです。
+
+> これは、全ての HTML 要素は 1 単語となっているというこれまでの経緯から、既に存在する、そして将来定義される HTML 要素との衝突を防止します。
+
+悪い例
+```
+export default {
+  name: 'Todo',
+  // ...
+}
+```
+
+良い例
+```
+export default {
+  name: 'TodoItem',
+  // ...
+}
+```
+
 ### [プライベートなプロパティ名](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%81%AA%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E5%90%8D-%E5%BF%85%E9%A0%88)
 
 ### [基底コンポーネントの名前](https://jp.vuejs.org/v2/style-guide/index.html#%E5%9F%BA%E5%BA%95%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
