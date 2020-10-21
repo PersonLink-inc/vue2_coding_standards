@@ -203,6 +203,25 @@ class Foo {
 
 ## [インターフェース](https://typescript-jp.gitbook.io/deep-dive/styleguide#intfsu)
 
+名前にはPascalCaseを使います。
+> 理由：クラスに似ています
+メンバにはcamelCaseを使います。
+> 理由：クラスに似ています
+プレフィックスにIをつけないでください
+> 理由： 慣例的ではないため。lib.d.tsはIのない重要なインターフェース(例えば、Window、Documentなど)を定義します。
+
+悪い
+```
+interface IFoo {
+}
+```
+
+良い
+```
+interface Foo {
+}
+```
+
 ## [型](https://typescript-jp.gitbook.io/deep-dive/styleguide#taipu)
 
 ## [名前空間](https://typescript-jp.gitbook.io/deep-dive/styleguide#ming-qian-kong-jian)
