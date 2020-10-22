@@ -390,15 +390,106 @@ if (hasStock == true)
 
 ## コメント
 
+```
+/*
+ * メソッド名
+ *
+ * @param 引数名　引数の内容
+ * @return 返り値の内容
+/*
+```
+
+- 不要なコメントは記載しない
+
+コードからすぐわかること・冗長なコメント
+名前の説明
+コメントではなくわかりやすい名前を付ける。
+ソースコード管理システム、バグトラッキングシステムで管理している内容はソースコードにコメントで記載する必要はない。
+コメントアウトされたコードソースコード管理システムで管理されている
+
 ## コンポーネント
-
-### [コンポーネントのデータ](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF-%E5%BF%85%E9%A0%88)
-
-### [プロパティの定義](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%81%AE%E5%AE%9A%E7%BE%A9-%E5%BF%85%E9%A0%88)
 
 ### [キー付きv-for](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%AD%E3%83%BC%E4%BB%98%E3%81%8D-v-for-%E5%BF%85%E9%A0%88)
 
+常に v-for に対しては key を使用してください。
+
+悪い例
+```
+<ul>
+  <li v-for="todo in todos">
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+良い例
+```
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
 ### [v-forと一緒にv-ifを使うのを避ける](https://jp.vuejs.org/v2/style-guide/index.html#v-for-%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB-v-if-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%92%E9%81%BF%E3%81%91%E3%82%8B-%E5%BF%85%E9%A0%88)
+
+v-for と同じ要素に v-if を使わないでください。
+
+こうしたくなってしまう2つの一般的なケースがあります:
+
+- リスト内のアイテムをフィルタする(例: v-for="user in users" v-if="user.isActive")。このような場合は、フィルタリングされたリストを返却する算出プロパティに users を置き換えてください(例: activeUsers)。
+- 非表示にする必要がある場合、リストを描画しないようにする(例: v-for="user in users" v-if="shouldShowUsers")。このような場合は、v-if をコンテナ要素(例: ul、ol)に移動してください。
+
+悪い例
+```
+<ul>
+  <li
+    v-for="user in users"
+    v-if="user.isActive"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+```
+
+```
+<ul>
+  <li
+    v-for="user in users"
+    v-if="shouldShowUsers"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+```
+
+良い例
+```
+<ul>
+  <li
+    v-for="user in activeUsers"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+```
+
+```
+<ul v-if="shouldShowUsers">
+  <li
+    v-for="user in users"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+```
 
 ### [コンポーネントスタイルのスコープ](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97-%E5%BF%85%E9%A0%88)
 
