@@ -782,36 +782,8 @@ class X implements FooBar {
 
 ## [スペース](https://typescript-jp.gitbook.io/deep-dive/styleguide#supsu)
 
+2つのスペースを使います。タブではありません。
+
 ## [セミコロン(文末)](https://typescript-jp.gitbook.io/deep-dive/styleguide#semikoron)
 
-## クラス
-
-## メソッド
-
-## 引数
-
-## 変数
-
-## ローカル変数
-
-## インスタンス変数
-
-## 定数
-
-## 継承
-
-## インスタンス
-
-## 制御構造
-
-## 文字列操作
-
-## 数値
-
-## 日付
-
-## 三項演算子
-
-## 例外
-
-## インポート
+セミコロンを使用してください。
