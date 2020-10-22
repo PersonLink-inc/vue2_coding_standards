@@ -563,6 +563,29 @@ v-for と同じ要素に v-if を使わないでください。
 
 ### [コンポーネントのファイル](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+ファイルを結合してくれるビルドシステムがあるときは必ず、各コンポーネントはそれぞれ別のファイルに書くべきです。
+
+悪い例
+```
+Vue.component('TodoList', {
+  // ...
+})
+
+Vue.component('TodoItem', {
+  // ...
+})
+```
+
+良い例
+```
+components/
+|- TodoList.js
+|- TodoItem.js
+components/
+|- TodoList.vue
+|- TodoItem.vue
+```
+
 ### [自己終了形式のコンポーネント](https://jp.vuejs.org/v2/style-guide/index.html#%E8%87%AA%E5%B7%B1%E7%B5%82%E4%BA%86%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ### [複数の属性を持つ要素](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E3%81%AE%E5%B1%9E%E6%80%A7%E3%82%92%E3%82%82%E3%81%A4%E8%A6%81%E7%B4%A0-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
