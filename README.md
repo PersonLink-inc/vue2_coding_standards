@@ -535,12 +535,12 @@ v-for と同じ要素に v-if を使わないでください。
 ```
 <!-- BEM の慣例を使用 -->
 <style>
-.c-Button {
+.c-button {
   border: none;
   border-radius: 2px;
 }
 
-.c-Button--close {
+.c-button--close {
   background-color: red;
 }
 </style>
