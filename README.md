@@ -588,6 +588,24 @@ components/
 
 ### [自己終了形式のコンポーネント](https://jp.vuejs.org/v2/style-guide/index.html#%E8%87%AA%E5%B7%B1%E7%B5%82%E4%BA%86%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+中身を持たないコンポーネントは、 単一ファイルコンポーネント 、文字列テンプレートの中では自己終了形式で書くべきです。ただし、DOM テンプレート内ではそうしてはいけません。
+
+悪い例
+```
+<!-- 単一ファイルコンポーネント、文字列テンプレート、JSX の中 -->
+<MyComponent></MyComponent>
+<!-- DOM テンプレートの中 -->
+<my-component/>
+```
+
+良い例
+```
+<!-- 単一ファイルコンポーネント、文字列テンプレート、JSX の中 -->
+<MyComponent/>
+<!-- DOM テンプレートの中 -->
+<my-component></my-component>
+```
+
 ### [複数の属性を持つ要素](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E3%81%AE%E5%B1%9E%E6%80%A7%E3%82%92%E3%82%82%E3%81%A4%E8%A6%81%E7%B4%A0-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ### [テンプレート内での単純な式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E5%86%85%E3%81%A7%E3%81%AE%E5%8D%98%E7%B4%94%E3%81%AA%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
