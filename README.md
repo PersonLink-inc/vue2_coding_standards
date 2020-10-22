@@ -493,6 +493,74 @@ v-for と同じ要素に v-if を使わないでください。
 
 ### [コンポーネントスタイルのスコープ](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97-%E5%BF%85%E9%A0%88)
 
+アプリケーションにとって、トップレベルの App コンポーネントとレイアウトコンポーネント内のスタイルはグローバルかもしれませんが、他のすべてのコンポーネントは常にスコープされているべきです。
+
+悪い例
+```
+<template>
+  <button class="btn btn-close">X</button>
+</template>
+
+<style>
+.btn-close {
+  background-color: red;
+}
+</style>
+```
+
+良い例
+```
+<template>
+  <button class="button button-close">X</button>
+</template>
+
+<!-- `scoped` を使用 -->
+<style scoped>
+.button {
+  border: none;
+  border-radius: 2px;
+}
+
+.button-close {
+  background-color: red;
+}
+</style>
+<template>
+  <button :class="[$style.button, $style.buttonClose]">X</button>
+</template>
+```
+
+```
+<!-- CSS modules を使用 -->
+<style module>
+.button {
+  border: none;
+  border-radius: 2px;
+}
+
+.buttonClose {
+  background-color: red;
+}
+</style>
+<template>
+  <button class="c-Button c-Button--close">X</button>
+</template>
+```
+
+```
+<!-- BEM の慣例を使用 -->
+<style>
+.c-Button {
+  border: none;
+  border-radius: 2px;
+}
+
+.c-Button--close {
+  background-color: red;
+}
+</style>
+```
+
 ### [コンポーネントのファイル](https://jp.vuejs.org/v2/style-guide/index.html#%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ### [自己終了形式のコンポーネント](https://jp.vuejs.org/v2/style-guide/index.html#%E8%87%AA%E5%B7%B1%E7%B5%82%E4%BA%86%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
