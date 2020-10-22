@@ -776,6 +776,10 @@ class X implements FooBar {
 
 ## [引用符](https://typescript-jp.gitbook.io/deep-dive/styleguide#yin-yong-fu)
 
+エスケープしない限り、シングルクォート(')を使用することをお勧めします。
+
+ダブルクォートを使用できない場合は、バックティック(`)を使用してみてください。
+
 ## [スペース](https://typescript-jp.gitbook.io/deep-dive/styleguide#supsu)
 
 ## [セミコロン(文末)](https://typescript-jp.gitbook.io/deep-dive/styleguide#semikoron)
