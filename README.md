@@ -13,7 +13,6 @@
 ### [TypeScript](https://typescript-jp.gitbook.io/deep-dive/styleguide#fairu)
 
 camelCaseを使ってファイルに名前を付けます。例えばaccordion.tsx、myControl.tsx、utils.ts、map.tsなどです。
-> 理由：多くのJSチームで慣習的です。
 
 ### [単一ファイルコンポーネントのファイル名の形式](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E4%B8%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E5%BD%A2%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
@@ -38,8 +37,6 @@ components/
 ### [複数単語コンポーネント名](https://jp.vuejs.org/v2/style-guide/index.html#%E8%A4%87%E6%95%B0%E5%8D%98%E8%AA%9E%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E5%90%8D-%E5%BF%85%E9%A0%88)
 
 ルートの App コンポーネントや、Vue が提供する <transition> や <component> のようなビルトインコンポーネントを除き、コンポーネント名は常に複数単語とするべきです。
-
-> これは、全ての HTML 要素は 1 単語となっているというこれまでの経緯から、既に存在する、そして将来定義される HTML 要素との衝突を防止します。
 
 悪い例
 ```
@@ -124,8 +121,6 @@ components/
 
 コンポーネント名には、略語よりも完全な単語を使うべきです。
 
-> 長い名前によってもたらされる明快さは非常に貴重ですが、それをタイプする労力はエディタの自動補完によってとても小さくなります。特に、一般的でない略語は常に避けるべきです。
-
 悪い例
 ```
 components/
@@ -163,13 +158,12 @@ props: {
 ## [クラス](https://typescript-jp.gitbook.io/deep-dive/styleguide#kurasu)
 
 クラス名には PascalCaseを使います。
-> 理由：これは実際には標準のJavaScriptではかなり一般的です。
 
-悪い
+悪い例
 ```
 class foo { }
 ```
-良い
+良い例
 ```
 class Foo { }
 ```
@@ -178,14 +172,14 @@ class Foo { }
 
 メソッド名にはcamelCaseを使う
 
-悪い
+悪い例
 ```
 class Foo {
     BazHoge() { }
 }
 ```
 
-良い
+良い例
 ```
 class Foo {
     bazHoge() { }
@@ -194,13 +188,13 @@ class Foo {
 
 メソッドの引数はcamelCaseを使う。型をつけましょう。
 
-悪い
+悪い例
 ```
 hoge(File) {
 }
 ```
 
-良い
+良い例
 ```
 hoge(file: File) {
 }
@@ -213,16 +207,15 @@ hoge(file: File) {
 メンバにはcamelCaseを使います。
 
 プレフィックスにIをつけないでください
-> 理由： 慣例的ではないため。lib.d.tsはIのない重要なインターフェース(例えば、Window、Documentなど)を定義します。
 
-悪い
+悪い例
 ```
 interface IFoo {
   hoge-huga: number
 }
 ```
 
-良い
+良い例
 ```
 interface Foo {
   hogeHuga: number
@@ -235,14 +228,14 @@ interface Foo {
 
 メンバにはcamelCaseを使います。
 
-悪い
+悪い例
 ```
 type foo = {
   hoge-huga: number
 }
 ```
 
-良い
+良い例
 ```
 type Foo = {
   hogeHuga: number
@@ -252,15 +245,14 @@ type Foo = {
 ## [名前空間](https://typescript-jp.gitbook.io/deep-dive/styleguide#ming-qian-kong-jian)
 
 名前にPascalCaseを使用する
-> 理由：TypeScriptチームに続くコンベンション。名前空間は事実上静的メンバを持つクラスです。クラス名はPascalCase=>名前空間名はPascalCaseです
 
-悪い
+悪い例
 ```
 namespace foo {
 }
 ```
 
-良い
+良い例
 ```
 namespace Foo {
 }
@@ -383,20 +375,22 @@ if (hasStock == true)
 
 ```
 /*
- * メソッド名
+ * メソッドの説明
  *
  * @param 引数名　引数の内容
  * @return 返り値の内容
 /*
 ```
 
-- 不要なコメントは記載しない
+### 不要なコメントは記載しない
 
-コードからすぐわかること・冗長なコメント
-名前の説明
-コメントではなくわかりやすい名前を付ける。
-ソースコード管理システム、バグトラッキングシステムで管理している内容はソースコードにコメントで記載する必要はない。
-コメントアウトされたコードソースコード管理システムで管理されている
+- コードからすぐわかること
+- 冗長なコメント
+- 名前の説明
+  - コメントではなくわかりやすい名前を付ける。
+- 別システムで管理している内容
+  - ソースコード管理システム、バグトラッキングシステムで管理している内容はソースコードにコメントで記載する必要はない。
+    - コメントアウトされたコードソースコード管理システムで管理されている
 
 ## コンポーネント
 
