@@ -645,6 +645,36 @@ computed: {
 
 ### [単純な算出プロパティ](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E7%B4%94%E3%81%AA%E7%AE%97%E5%87%BA%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+複雑な算出プロパティは、できる限りたくさんの単純なプロパティに分割するべきです。
+
+悪い例
+```
+computed: {
+  price: function () {
+    var basePrice = this.manufactureCost / (1 - this.profitMargin)
+    return (
+      basePrice -
+      basePrice * (this.discountPercent || 0)
+    )
+  }
+}
+```
+
+良い例
+```
+computed: {
+  basePrice: function () {
+    return this.manufactureCost / (1 - this.profitMargin)
+  },
+  discount: function () {
+    return this.basePrice * (this.discountPercent || 0)
+  },
+  finalPrice: function () {
+    return this.basePrice - this.discount
+  }
+}
+```
+
 ### [引用符付きの属性値](https://jp.vuejs.org/v2/style-guide/index.html#%E5%BC%95%E7%94%A8%E7%AC%A6%E4%BB%98%E3%81%8D%E3%81%AE%E5%B1%9E%E6%80%A7%E5%80%A4-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ### [ディレクティブの短縮記法](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%81%AE%E7%9F%AD%E7%B8%AE%E8%A8%98%E6%B3%95-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
