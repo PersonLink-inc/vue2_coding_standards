@@ -752,6 +752,28 @@ computed: {
 
 ### [type vs interface](https://typescript-jp.gitbook.io/deep-dive/styleguide#type-vs-interface)
 
+ユニオン型や交差型が必要な場合にはtypeを使います：
+
+```
+type Foo = number | { someProperty: number }
+```
+
+extendやimplementsをしたいときはinterfaceを使います。
+```
+interface Foo {
+  foo: string;
+}
+interface FooBar extends Foo {
+  bar: string;
+}
+class X implements FooBar {
+  foo: string;
+  bar: string;
+}
+```
+
+そうでなければ、その日あなたを幸せにするものを使用してください。
+
 ## [引用符](https://typescript-jp.gitbook.io/deep-dive/styleguide#yin-yong-fu)
 
 ## [スペース](https://typescript-jp.gitbook.io/deep-dive/styleguide#supsu)
