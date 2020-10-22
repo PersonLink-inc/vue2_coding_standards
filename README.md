@@ -746,11 +746,9 @@ computed: {
 
 ## 型
 
-### [null vs undefined](https://typescript-jp.gitbook.io/deep-dive/styleguide#null-vs-undefined)
-
-### [フォーマット](https://typescript-jp.gitbook.io/deep-dive/styleguide#fmatto)
-
 ### [配列](https://typescript-jp.gitbook.io/deep-dive/styleguide#pei-lie)
+
+配列にfoos:Array<Foo>の代わりにfoos:Foo[]として配列にアノテーションをつけます。
 
 ### [type vs interface](https://typescript-jp.gitbook.io/deep-dive/styleguide#type-vs-interface)
 
