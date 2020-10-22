@@ -691,8 +691,58 @@ computed: {
 <AppSidebar :style="{ width: sidebarWidth + 'px' }">
 ```
 
-
 ### [ディレクティブの短縮記法](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%81%AE%E7%9F%AD%E7%B8%AE%E8%A8%98%E6%B3%95-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
+
+ディレクティブの短縮記法 (v-bind: に対する : 、 v-on: に対する @ 、 v-slot: に対する #)は、常に使うべきです。
+
+悪い例
+```
+<input
+  v-bind:value="newTodoText"
+  :placeholder="newTodoInstructions"
+>
+```
+
+```
+<input
+  v-on:input="onInput"
+  @focus="onFocus"
+>
+```
+
+```
+<template v-slot:header>
+  <h1>Here might be a page title</h1>
+</template>
+
+<template #footer>
+  <p>Here's some contact info</p>
+</template>
+```
+
+良い例
+```
+<input
+  :value="newTodoText"
+  :placeholder="newTodoInstructions"
+>
+```
+
+```
+<input
+  @input="onInput"
+  @focus="onFocus"
+>
+```
+
+```
+<template #header>
+  <h1>Here might be a page title</h1>
+</template>
+<template #footer>
+  <p>Here's some contact info</p>
+</template>
+```
 
 ## 型
 
