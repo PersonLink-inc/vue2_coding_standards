@@ -4,7 +4,7 @@
 
 ### css設計について
 
-FROCSSの設計に基づくようにする
+FLOCSSの設計に基づくようにする
 コンパイル後に一つのcssファイルとなるようにimportするファイル以外はファイル名の先頭に_(アンダーバー)をつける
 
 ただしVue.jsではコンポーネントに分けて作るので、projectとlayoutに関してはvueの`<style scope lang="scss"></style>`内に移譲する
@@ -46,16 +46,16 @@ mixinがあればfundationに定義する
 通常は以下のようにするがlayoutとprojectはvueコンポーネントのスタイルで定義するためプレフィクスなし
 ```
 通常
-layout     =l-
-component  =c-
-project    =p-
-utility    =u-
+layout     = l-
+component  = c-
+project    = p-
+utility    = u-
 
 案件では
 layout     なし
-component  =c-
+component  = c-
 project    なし
-utility    =u-
+utility    = u-
 ```
 
 ### 命名規則
