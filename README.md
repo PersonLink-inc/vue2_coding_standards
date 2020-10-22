@@ -618,6 +618,31 @@ components/
 
 ### [テンプレート内での単純な式](https://jp.vuejs.org/v2/style-guide/index.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E5%86%85%E3%81%A7%E3%81%AE%E5%8D%98%E7%B4%94%E3%81%AA%E5%BC%8F-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
+複雑な式は算出プロパティかメソッドにリファクタリングして、コンポーネントのテンプレートには単純な式だけを含むようにするべきです。
+
+悪い例
+```
+{{
+  fullName.split(' ').map(function (word) {
+    return word[0].toUpperCase() + word.slice(1)
+  }).join(' ')
+}}
+```
+
+良い例
+```
+<!-- テンプレート内 -->
+{{ normalizedFullName }}
+// 複雑な式を算出プロパティに移動
+computed: {
+  normalizedFullName: function () {
+    return this.fullName.split(' ').map(function (word) {
+      return word[0].toUpperCase() + word.slice(1)
+    }).join(' ')
+  }
+}
+```
+
 ### [単純な算出プロパティ](https://jp.vuejs.org/v2/style-guide/index.html#%E5%8D%98%E7%B4%94%E3%81%AA%E7%AE%97%E5%87%BA%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
 
 ### [引用符付きの属性値](https://jp.vuejs.org/v2/style-guide/index.html#%E5%BC%95%E7%94%A8%E7%AC%A6%E4%BB%98%E3%81%8D%E3%81%AE%E5%B1%9E%E6%80%A7%E5%80%A4-%E5%BC%B7%E3%81%8F%E6%8E%A8%E5%A5%A8)
