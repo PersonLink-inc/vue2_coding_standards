@@ -793,7 +793,7 @@ computed: {
 type Foo = number | { someProperty: number }
 ```
 
-extendやimplementsをしたいときはinterfaceを使います。
+extendsやimplementsをしたいときはinterfaceを使います。
 ```
 interface Foo {
   foo: string;
