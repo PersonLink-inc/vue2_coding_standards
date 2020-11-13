@@ -1,5 +1,5 @@
 # 対象のプロジェクト構成
-
+```
 @vue/cli    4.5.4
 vue    2.6.11
 vuex    3.4.0
@@ -8,3 +8,4 @@ vue-class-component    7.2.3
 vue-property-decorator    8.4.2
 vuex-module-decorators    0.17.0
 axios    0.20.0
+```
