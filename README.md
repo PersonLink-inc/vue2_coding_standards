@@ -16,17 +16,10 @@ vuex-module-decorators    0.17.0
 axios    0.20.0
 ```
 
-# [フォルダ構成](https://github.com/PersonLink-inc/vue2_coding_standards/CodingConvention_folder_strucutre.md)
+# [フォルダ構成](/folder_structure.md)
 
-# [命名規則](https://github.com/PersonLink-inc/vue2_coding_standards/CodingConvention_naming_style.md)
+# [命名規則](/naming_style.md)
 
-# [コーディングスタイル](https://github.com/PersonLink-inc/vue2_coding_standards/CodingConvention_coding_style.md)
+# [コーディングスタイル](/coding_style.md)
 
-
-# [対象のプロジェクト構成](https://github.com/PersonLink-inc/vue2_coding_standards/blob/master/project_structure.md)
-
-# [フォルダ構成](https://github.com/PersonLink-inc/vue2_coding_standards/blob/master/folder_structure.md)
-
-# [命名規則](https://github.com/PersonLink-inc/vue2_coding_standards/blob/master/naming_style.md)
-
-# [コーディングスタイル](https://github.com/PersonLink-inc/vue2_coding_standards/blob/master/coding_style.md)
+# [CSSスタイル](/css_styleguide.md)
