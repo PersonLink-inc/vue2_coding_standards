@@ -5,7 +5,6 @@
 - 読みやすいコードを書けることを目的とする。
 
 # リンク
-- [フォルダ構成](/folder_structure.md)
-- [命名規則](/naming_style.md)
-- [コーディングスタイル](/coding_style.md)
-- [CSSスタイル](/css_styleguide.md)
+- [命名規則ガイド](/guides/naming_style_guide.md)
+- [コーディングスタイル](/guides/coding_style_guide.md)
+- [CSSスタイル](/guides/css_style_guide.md)
