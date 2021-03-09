@@ -7,4 +7,4 @@
 # リンク
 - [命名規則ガイド](/guides/naming_style_guide.md)
 - [コーディングスタイル](/guides/coding_style_guide.md)
-- [CSSスタイル](/guides/css_style_guide.md)
+- [Vue/CSSスタイル](/guides/uve_css_style_guide.md)
