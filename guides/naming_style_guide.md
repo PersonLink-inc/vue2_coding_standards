@@ -5,14 +5,15 @@
 ### TypeScript
 > https://typescript-jp.gitbook.io/deep-dive/styleguide#fairu
 
-__`camelCase`__ を使ってファイルに名前を付けましょう。
+モデルやメソッド名をファイル名に利用する場合は __`camelCase`__ を、
+クラス名をファイル名に利用する場合は __`PascalCase`__ を使ってファイルに名前を付けましょう。
 
 良い例
 ```
-- accordion.tsx
-- myControl.tsx
-- map.ts
-- utils.ts
+- AuthStore.ts
+- StorageUtils.ts
+- addItem.ts
+- user.ts
 ```
 
 ### コンポーネント(Vue)
