@@ -10,4 +10,4 @@
 - [Vue/CSSスタイル](/guides/vue_css_style_guide.md)
 
 # ESLint 設定ファイル
-- [vue2.* + typescript](/config/vue2_typescript/.eslintrc.js)
+- [vue2.* + typescript](/config/vue2_typescript/README.md)
